@@ -1,38 +1,46 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+h1{
+  font-family: 'Langar', cursive;
+}
+
+p{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.vitsi{
+  margin: 10px;
+  padding: 15px;
+  border: 5px double black;
+}
+
+.laatikot{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.laskuri{
+  width: 60%;
+  border: 2px solid black;
   text-align: center;
+  float:right;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown{
+  margin: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.valitsimet{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.valitsimet input{
+  margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.päälaatikko{
+  padding: 15px;
 }
