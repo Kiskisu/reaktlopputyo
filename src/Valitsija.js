@@ -19,7 +19,7 @@ const Valitsija = ({vitsit, setVitsit}) => {
     }
 
     const lataa_kategoriat = () => {
-        let base_url = "http://api.icndb.com/categories";
+        let base_url = "https://api.icndb.com/categories";
 
         fetch(base_url)
          .then((resp) => {
@@ -46,9 +46,9 @@ const Valitsija = ({vitsit, setVitsit}) => {
             lastName = sukuNimi;
         }
         if (valittuKategoria === "") {
-            base_url = "http://api.icndb.com/jokes/random/"+maara+"?firstName="+firstName+"&lastName="+lastName;
+            base_url = "https://api.icndb.com/jokes/random/"+maara+"?firstName="+firstName+"&lastName="+lastName;
         }else{
-            base_url = "http://api.icndb.com/jokes/random/"+maara+"?limitTo=["+valittuKategoria+"]&firstName="+firstName+"&lastName="+lastName;
+            base_url = "https://api.icndb.com/jokes/random/"+maara+"?limitTo=["+valittuKategoria+"]&firstName="+firstName+"&lastName="+lastName;
         }
         //http://api.icndb.com/jokes/random?limitTo=Array&firstName=John&lastName=Doe/3
         
